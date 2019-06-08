@@ -1,15 +1,10 @@
 <?php
-$checkin = $_POST['checkin'];
+$checkin = "Hola choco";
 $checkout = $_POST['checkout'];
 
 $mail="jeandy90@yahoo.com";
 $asunto="prueba";
 
 
-if(mail($mail,$asunto,$checkin)){
+mail($mail,$asunto,$checkin);
    echo "Email enviado ";
-}
-else{
-    echo "uy uy uy";
-}
-?>
