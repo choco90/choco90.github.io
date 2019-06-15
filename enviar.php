@@ -1,10 +1,15 @@
 <?php
-$checkin = "Hola choco";
+$checkin =  $_POST['checkin'];
 $checkout = $_POST['checkout'];
+$adultos= $_POST['adultos'];
+$criancas= $_POST['criancas'];
 
-$mail="jeandy90@yahoo.com";
+$mail=$_POST['email'];
+
+//$mail="jeandy90@yahoo.com";
 $asunto="prueba";
 
-
-mail($mail,$asunto,$checkin);
-   echo "Email enviado ";
+$mensaje="La reserva es para   ".$adultos ." adultos  y ".$criancas."  criancas ";
+//mail($mail,$asunto,$mensaje);
+   echo $mensaje;
+   
