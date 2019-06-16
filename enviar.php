@@ -8,8 +8,7 @@ $mail=$_POST['email'];
 
 //$mail="jeandy90@yahoo.com";
 $asunto="prueba";
-
+$response=1;
 $mensaje="La reserva es para   ".$adultos ." adultos  y ".$criancas."  criancas ";
-//mail($mail,$asunto,$mensaje);
-   echo $mensaje;
-   
+mail($mail,$asunto,$mensaje);
+   echo $response;
